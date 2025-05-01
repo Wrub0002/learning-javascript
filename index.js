@@ -12,13 +12,13 @@ document.getElementById("myP").textContent = "I like Pizza!"
 
 */
 
-/* === Variables === */
+/* === Variables ===
 let x;
 
 x = 123;
 console.log(x)
 
-// let age = 21;
+let age = 21;
 console.log(`You are ${age} years old`);
 console.log(typeof age);
 
@@ -37,4 +37,27 @@ let student = false;
 document.getElementById("p1").textContent = `Your name is ${fullname}`
 document.getElementById("p2").textContent = `Your are ${age} yeas old`
 document.getElementById("p3").textContent = `Enrolled: ${student}`
+*/
 
+/* === Arithmetics operators === */
+
+
+let students = 30
+
+//students = students +1;
+//students = students -1;
+//students = students * 2
+//students = students /2;
+//students = students % 3;
+//let extraStudents = students % 3;
+
+//students += 1;
+//students -= 1;
+//students *= 2;
+//students /= 2;
+//students %= 2;
+
+// students ++;
+// students --;
+
+console.log(students)
