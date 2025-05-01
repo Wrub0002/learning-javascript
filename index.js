@@ -39,7 +39,7 @@ document.getElementById("p2").textContent = `Your are ${age} yeas old`
 document.getElementById("p3").textContent = `Enrolled: ${student}`
 */
 
-/* === Arithmetics operators === */
+/* === Arithmetics operators === 
 
 
 let students = 30
@@ -61,3 +61,21 @@ let students = 30
 // students --;
 
 console.log(students)
+*/
+
+/* === User Input === 
+    Easy Way
+let username;
+
+username = window.prompt("What is your username?");
+
+console.log(username)
+
+//////////
+
+let username;
+document.getElementById("mySubmit").onclick = function(){
+    username = document.getElementById("myText").value;
+    document.getElementById("myH1").textContent = `Hello ${username}`
+}
+*/
