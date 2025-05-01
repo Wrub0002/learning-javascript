@@ -81,11 +81,26 @@ document.getElementById("mySubmit").onclick = function(){
 */
 
 /* === Type Conversion ===
+
+let age = window.prompt("How old are you?");
+
+age = Number(age);
+age += 1;
+
+console.log(age, typeof age);
 */
 
-let age = window.prompt("How old are you?")
+/* === Constants ===
+*/
 
-age = Number(age)
-age += 1
+const pi = 3.14159;
+let radius;
+let circumference;
 
-console.log(age, typeof age)
+document.getElementById("myButton").onclick = function(){
+    radius = document.getElementById("myText").value;
+radius = Number(radius);
+circumference = 2* pi * radius;
+document.getElementById("myH3").textContent = `${circumference}cm`;
+
+}
