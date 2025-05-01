@@ -79,3 +79,13 @@ document.getElementById("mySubmit").onclick = function(){
     document.getElementById("myH1").textContent = `Hello ${username}`
 }
 */
+
+/* === Type Conversion ===
+*/
+
+let age = window.prompt("How old are you?")
+
+age = Number(age)
+age += 1
+
+console.log(age, typeof age)
