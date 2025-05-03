@@ -91,7 +91,6 @@ console.log(age, typeof age);
 */
 
 /* === Constants ===
-*/
 
 const pi = 3.14159;
 let radius;
@@ -104,3 +103,15 @@ circumference = 2* pi * radius;
 document.getElementById("myH3").textContent = `${circumference}cm`;
 
 }
+*/
+/* === Math ===*/
+
+console.log(Math.PI)
+
+let x = 3.21;
+let y = 2;
+let z;
+
+x = Math.round(x);
+
+console.log(x)
