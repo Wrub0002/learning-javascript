@@ -8,11 +8,20 @@
 </head>
 <body>
     
-    <label id="myLabel">Enter your age:</label><br><br>
-    <input type="text" id="myText"><br><br>
-    <button id="mySubmit">Submit</button><br>
-    <p id="result"></p>
+<input type="checkbox" id="myCheckbox">
+<label for="myCheckbox">Subscribe</label><br><br>
 
+<input type="radio" id="VisaBtn" name="card">
+<label for="VisaBtn">Visa</label><br>
+<input type="radio" id="mastercardBtn" name="card">
+<label for="mastercardBtn">Mastercard</label><br>
+<input type="radio" id="paypalBtn" name="card">
+<label for="paypalBtn">PayPal</label><br><br>
+
+<button type="submit" id="mySubmit">Submit</button>
+
+<p id="subResult"></p>
+<p id="paymentResult"></p>
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 body{
 font-family: calibri;
+font-size: 2em;
 
 }
 
@@ -12,3 +13,8 @@ font-family: calibri;
 #myLabel{
 font-size: 3em;
 }
+#mySubmit{
+font-size: 1em;
+
+}
+

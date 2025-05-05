@@ -221,3 +221,36 @@ mySubmit.onclick = function(){
 
 }
 */
+
+/* === Checked Preoperty === */
+
+const myCheckbox = document.getElementById("myCheckbox");
+const VisaBtn = document.getElementById("VisaBtn");
+const mastercardBtn = document.getElementById("mastercardBtn");
+const paypalBtn = document.getElementById("paypalBtn");
+const mySubmit = document.getElementById("mySubmit");
+const subResult = document.getElementById("subResult");
+const paymentResult = document.getElementById("paymentResult");
+
+mySubmit.onclick = function(){
+    if (myCheckbox.checked){
+        subResult.textContent = `You are Subscribed`;
+    }
+    else{
+        subResult.textContent = `You are not Subscribed`;
+    }
+
+    if(VisaBtn.checked){
+        paymentResult.textContent = `You are paying with visa`
+    }
+    else if (mastercardBtn.checked){
+        paymentResult.textContent = `You are paying with Mastercard`
+    }
+    else if (paypalBtn.checked){
+        paymentResult.textContent = `You are paying with PayPal`
+    }
+    else{
+        paymentResult.textContent = `You must select a payment type`
+    }
+}
+
