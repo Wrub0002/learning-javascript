@@ -1,4 +1,16 @@
 body{
-    font-family: calibri;
-    font-size: 2em;
+font-family: calibri;
+text-align: center;
+
+
+}
+
+#myBtn{
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+#myLabel{
+font-size: 3em;
 }

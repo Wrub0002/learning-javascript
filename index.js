@@ -104,7 +104,8 @@ document.getElementById("myH3").textContent = `${circumference}cm`;
 
 }
 */
-/* === Math ===*/
+
+/* === Math ===
 
 console.log(Math.PI)
 
@@ -114,4 +115,32 @@ let z;
 
 x = Math.round(x);
 
-console.log(x)
+console.log(x);
+
+*/
+/* === Random Number Generator === 
+
+let min = 50;
+let max = 100;
+
+let Randomnum = Math.floor(Math.random() * (max - min)) + min;
+
+console.log(Randomnum);
+
+*/
+
+const myButton = document.getElementById("myBtn");
+const myLabel = document.getElementById("myLabel");
+
+const min = 1;
+const max = 6
+let Randomnum;
+
+myButton.onclick = function() {
+    Randomnum = Math.floor(Math.random() * max) + min;
+    myLabel.textContent = Randomnum;
+
+}
+
+
+
