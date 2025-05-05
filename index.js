@@ -118,6 +118,7 @@ x = Math.round(x);
 console.log(x);
 
 */
+
 /* === Random Number Generator === 
 
 let min = 50;
@@ -127,7 +128,7 @@ let Randomnum = Math.floor(Math.random() * (max - min)) + min;
 
 console.log(Randomnum);
 
-*/
+
 
 const myButton = document.getElementById("myBtn");
 const myLabel = document.getElementById("myLabel");
@@ -142,5 +143,81 @@ myButton.onclick = function() {
 
 }
 
+*/
 
+/* === If Statements ===
 
+let age = 10;
+
+if(age >= 18){
+
+    console.log("you are old enough to enter this site")
+}
+else{
+    console.log("you are not old enough to enter this site")
+}
+
+let time = 14
+if (time < 12){
+    console.log("Good Morning")
+}
+   else{
+    console.log("Good Afternoon")
+   }
+
+let age = 19;
+let hasLicense = false;
+
+if (age >= 16 ){
+    console.log("You are old enough to drive")
+
+    if(hasLicense){
+        console.log("you have your license")
+    }
+    else{
+        console.log("you dont have your license") 
+    }
+}
+else{
+    console.log("You are not old enough to drive")
+
+}
+let age = -1
+
+if (age >= 18){
+    console.log("you are old enough to enter this site")
+}
+else if(age < 0){
+    console.log("Thats Impossible, your age cant be less than zero")
+}
+else{
+    console.log("you are not old enough to enter this site")
+
+}
+
+const myText = document.getElementById("myText");
+const mySubmit = document.getElementById("mySubmit");
+const result = document.getElementById("result");
+
+let age 
+
+mySubmit.onclick = function(){
+
+    age = myText.value;
+    age = Number(age);
+
+    if (age > 100) {
+        result.textContent = "You are too old to enter this site";
+    }
+    else if (age >= 18) {
+        result.textContent = "You are old enough to enter this site";
+    }
+    else if (age < 0) {
+        result.textContent = "That's impossible, your age can't be less than zero";
+    }
+    else {
+        result.textContent = "You must be 18 to enter this website";
+    }
+
+}
+*/
