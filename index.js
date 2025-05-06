@@ -1,32 +1,37 @@
-/* === Logical Operators ===  */
+/* === Strict Equity ===  
 
-/* === And && ===  
-const temp = -1;
+const pi = 3.14;
 
-if (temp > 0 && temp <= 30){
-    console.log("The temperature is GOOD")
+if (pi == "3.14"){
+    console.log("Thats is PI");
 }
-else{
-    console.log("The temperature is BAD")
+else {
+    console.log("Thats not PI")
+}
+
+const pi = 3.14;
+
+if (pi === 3.14){
+    console.log("Thats is PI");
+}
+else {
+    console.log("Thats not PI")
+}
+
+const pi = 3.14;
+
+if (pi != "3.14"){
+    console.log("Thats not PI");
+}
+else {
+    console.log("Thats is  PI")
 }
 */
-/* === OR || ===  
-const temp = -25;
+const pi = "3.14";
 
-if (temp <= 0 || temp > 30){
-    console.log("The temperature is BAD")
+if (pi !== "3.14"){
+    console.log("Thats not PI");
 }
-else{
-    console.log("The temperature is GOOD")
-}
-*/
-
-/* === NOT ! ===  */
-const isSunny = true;
-
-if (!isSunny){
-    console.log("It`s Cloudy")
-}
-else{
-    console.log("It`s Sunny")
+else {
+    console.log("Thats is  PI")
 }
