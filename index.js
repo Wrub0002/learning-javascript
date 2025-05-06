@@ -1,10 +1,28 @@
-/* === Ternary Operator === 
-let age = 10;
-let message = age >= 18 ? `you are an adult` : "you are minor";
+/* === Switch ===  */
+let day = "pizza"
 
-console.log(message)
-*/
-
-let time = 11;
-let gretting = time < 12 ? `good morning` : `Good Afternoon`
-console.log(gretting)
+switch(day){
+    case 1:
+        console.log("It`s Monday")
+        break;
+    case 2:
+        console.log("It`s Tuesday")
+        break;
+    case 3:
+        console.log("It`s Wednesday")
+        break;
+    case 4:
+        console.log("It`s Thursday")
+        break;
+    case 5:
+        console.log("It`s Friday")
+        break;
+    case 6:
+        console.log("It`s Saturday")
+        break;
+    case 7:
+        console.log("It`s Sunday")
+        break;
+    default:
+        console.log(`${day} its not a day`)
+}
