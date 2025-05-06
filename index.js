@@ -1,28 +1,21 @@
-/* === Switch ===  */
-let day = "pizza"
+/* === Method Chaining ===  */
 
-switch(day){
-    case 1:
-        console.log("It`s Monday")
-        break;
-    case 2:
-        console.log("It`s Tuesday")
-        break;
-    case 3:
-        console.log("It`s Wednesday")
-        break;
-    case 4:
-        console.log("It`s Thursday")
-        break;
-    case 5:
-        console.log("It`s Friday")
-        break;
-    case 6:
-        console.log("It`s Saturday")
-        break;
-    case 7:
-        console.log("It`s Sunday")
-        break;
-    default:
-        console.log(`${day} its not a day`)
-}
+// No method Chaining
+let username = window.prompt("Enter your username: ");
+/*
+username = username.trim();
+let letter = username.charAt(0);
+letter = letter.toUpperCase();
+
+let extrachars = username.slice(1);
+extrachars = extrachars.toLowerCase();
+username = letter + extrachars;
+
+console.log(username); // Agora imprime o nome formatado corretamente
+*/
+
+// Method Chaining
+
+username = username.trim().charAt(0).toUpperCase(); + username.trim().slice(1).toLowerCase();
+
+console.log(username)
