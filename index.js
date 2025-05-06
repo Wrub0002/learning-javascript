@@ -1,21 +1,32 @@
-/* === Method Chaining ===  */
+/* === Logical Operators ===  */
 
-// No method Chaining
-let username = window.prompt("Enter your username: ");
-/*
-username = username.trim();
-let letter = username.charAt(0);
-letter = letter.toUpperCase();
+/* === And && ===  
+const temp = -1;
 
-let extrachars = username.slice(1);
-extrachars = extrachars.toLowerCase();
-username = letter + extrachars;
+if (temp > 0 && temp <= 30){
+    console.log("The temperature is GOOD")
+}
+else{
+    console.log("The temperature is BAD")
+}
+*/
+/* === OR || ===  
+const temp = -25;
 
-console.log(username); // Agora imprime o nome formatado corretamente
+if (temp <= 0 || temp > 30){
+    console.log("The temperature is BAD")
+}
+else{
+    console.log("The temperature is GOOD")
+}
 */
 
-// Method Chaining
+/* === NOT ! ===  */
+const isSunny = true;
 
-username = username.trim().charAt(0).toUpperCase(); + username.trim().slice(1).toLowerCase();
-
-console.log(username)
+if (!isSunny){
+    console.log("It`s Cloudy")
+}
+else{
+    console.log("It`s Sunny")
+}
