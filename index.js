@@ -1,37 +1,35 @@
-/* === Strict Equity ===  
+/* === While ===  
 
-const pi = 3.14;
+let username = ""
 
-if (pi == "3.14"){
-    console.log("Thats is PI");
-}
-else {
-    console.log("Thats not PI")
+ while (username === "" || username === null){
+    username = window.prompt("Enter your name")
 }
 
-const pi = 3.14;
+console.log(`hello ${username}`);
 
-if (pi === 3.14){
-    console.log("Thats is PI");
-}
-else {
-    console.log("Thats not PI")
+let username = ""
+
+do {
+    username = window.prompt("Enter your name")
+}while (username === "" || username === null)
+
+console.log(`hello ${username}`);*/
+
+let loggedIn = false;
+let username;
+let password;
+
+while(!loggedIn){
+    username = window.prompt("Enter your Username")
+    password = window.prompt("Enter your Password")
+
+    if (username === "leo" && password === "Wruleo"){
+        loggedIn = true
+        console.log("You are logged in ")
+    }
+    else{
+        console.log("Invalid credentials! please try again")
+        }
 }
 
-const pi = 3.14;
-
-if (pi != "3.14"){
-    console.log("Thats not PI");
-}
-else {
-    console.log("Thats is  PI")
-}
-*/
-const pi = "3.14";
-
-if (pi !== "3.14"){
-    console.log("Thats not PI");
-}
-else {
-    console.log("Thats is  PI")
-}
